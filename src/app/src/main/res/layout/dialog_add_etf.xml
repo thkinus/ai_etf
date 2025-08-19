@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/ios_card_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New ETF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1C1C1E"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ETF Symbol (e.g., QQQ)"
+        android:textSize="14sp"
+        android:textColor="#8E8E93"
+        android:layout_marginBottom="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/etfSymbolInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter ETF symbol"
+            android:textSize="16sp"
+            android:textColor="#1C1C1E"
+            android:background="@drawable/ios_expert_opinion_background"
+            android:padding="12dp"
+            android:inputType="textCapCharacters"
+            android:maxLength="10" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suggestionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:maxHeight="200dp"
+        android:background="@drawable/ios_expert_opinion_background"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ETF Name"
+        android:textSize="14sp"
+        android:textColor="#8E8E93"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etfNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter ETF name"
+        android:textSize="16sp"
+        android:textColor="#1C1C1E"
+        android:background="@drawable/ios_expert_opinion_background"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Cancel"
+            android:textColor="#007AFF"
+            android:background="@drawable/ios_button_unselected"
+            android:backgroundTint="#F2F2F7"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Add"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/ios_button_selected"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

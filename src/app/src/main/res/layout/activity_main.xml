@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ios_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/ios_card_background"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:elevation="2dp"
+        android:minHeight="56dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New York: Dec 19, 09:30:15 AM"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#1C1C1E"
+                android:drawableStart="@android:drawable/ic_menu_recent_history"
+                android:drawablePadding="8dp"
+                android:drawableTint="#007AFF"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="none" />
+
+            <TextView
+                android:id="@+id/koreaTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seoul: 12월 19일, 22:30:15"
+                android:textSize="13sp"
+                android:textColor="#8E8E93"
+                android:layout_marginTop="3dp"
+                android:drawableStart="@android:drawable/ic_menu_recent_history"
+                android:drawablePadding="8dp"
+                android:drawableTint="#8E8E93"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="none" />
+
+            <TextView
+                android:id="@+id/marketCountdownText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Market opens in: 5h 30m 15s"
+                android:textSize="11sp"
+                android:textColor="#FF3B30"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:drawableStart="@android:drawable/ic_menu_agenda"
+                android:drawablePadding="8dp"
+                android:drawableTint="#FF3B30"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                android:singleLine="true"
+                android:ellipsize="none" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/settingsButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_menu_preferences"
+            android:tint="#007AFF"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="2dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/ios_card_background"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/usTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/usTabIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_mapmode"
+                android:tint="#007AFF" />
+
+            <TextView
+                android:id="@+id/usTabText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="US"
+                android:textSize="12sp"
+                android:textColor="#007AFF"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#E5E5EA" />
+
+        <LinearLayout
+            android:id="@+id/krTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/krTabIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_mapmode"
+                android:tint="#8E8E93" />
+
+            <TextView
+                android:id="@+id/krTabText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KR"
+                android:textSize="12sp"
+                android:textColor="#8E8E93"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

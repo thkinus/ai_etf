@@ -1,0 +1,51 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#3730A3"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="512" height="512" rx="80" fill="url(#bg)"/>
+  
+  <!-- US Flag stripes -->
+  <rect x="40" y="60" width="432" height="15" fill="#DC2626"/>
+  <rect x="40" y="90" width="432" height="15" fill="#DC2626"/>
+  <rect x="40" y="120" width="432" height="15" fill="#DC2626"/>
+  
+  <!-- Stars -->
+  <polygon points="120,100 125,115 140,115 128,125 133,140 120,130 107,140 112,125 100,115 115,115" fill="white"/>
+  <polygon points="180,110 183,120 193,120 185,126 188,136 180,130 172,136 175,126 167,120 177,120" fill="white"/>
+  <polygon points="220,100 225,115 240,115 228,125 233,140 220,130 207,140 212,125 200,115 215,115" fill="white"/>
+  
+  <!-- AI Neural Network -->
+  <circle cx="150" cy="220" r="12" fill="#00D4FF"/>
+  <circle cx="200" cy="200" r="12" fill="#00D4FF"/>
+  <circle cx="200" cy="240" r="12" fill="#00D4FF"/>
+  <circle cx="250" cy="220" r="12" fill="#00D4FF"/>
+  <circle cx="300" cy="200" r="12" fill="#00D4FF"/>
+  <circle cx="300" cy="240" r="12" fill="#00D4FF"/>
+  
+  <!-- Neural connections -->
+  <line x1="150" y1="220" x2="200" y2="200" stroke="#00D4FF" stroke-width="4"/>
+  <line x1="150" y1="220" x2="200" y2="240" stroke="#00D4FF" stroke-width="4"/>
+  <line x1="200" y1="200" x2="250" y2="220" stroke="#00D4FF" stroke-width="4"/>
+  <line x1="200" y1="240" x2="250" y2="220" stroke="#00D4FF" stroke-width="4"/>
+  <line x1="250" y1="220" x2="300" y2="200" stroke="#00D4FF" stroke-width="4"/>
+  <line x1="250" y1="220" x2="300" y2="240" stroke="#00D4FF" stroke-width="4"/>
+  
+  <!-- ETF Chart -->
+  <path d="M 80 350 Q 150 330 200 340 T 280 345 T 380 335 T 450 340" stroke="#4ADE80" stroke-width="8" fill="none"/>
+  
+  <!-- Chart area background -->
+  <rect x="70" y="300" width="380" height="80" fill="rgba(255,255,255,0.1)" rx="8"/>
+  
+  <!-- Dollar sign -->
+  <path d="M 350 280 Q 350 270 360 270 Q 370 270 370 280 Q 370 290 360 290 Q 350 290 350 300 Q 350 310 360 310 Q 370 310 370 320 M 360 260 L 360 330" stroke="#4ADE80" stroke-width="6" fill="none"/>
+  
+  <!-- AI Text -->
+  <text x="200" y="450" font-family="Arial Black" font-size="60" fill="white" text-anchor="middle" font-weight="bold">AI</text>
+  <text x="320" y="450" font-family="Arial" font-size="40" fill="#4ADE80" text-anchor="middle">ETF</text>
+  
+</svg>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI ETF Icon Generator</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const sizes = [
+            { name: 'mdpi', size: 48 },
+            { name: 'hdpi', size: 72 },
+            { name: 'xhdpi', size: 96 },
+            { name: 'xxhdpi', size: 144 },
+            { name: 'xxxhdpi', size: 192 }
+        ];
+        
+        function generateIcon(size, dpiName) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, size, size);
+            
+            // Scale factor
+            const scale = size / 512;
+            ctx.scale(scale, scale);
+            
+            // Background gradient
+            const gradient = ctx.createRadialGradient(256, 256, 0, 256, 256, 350);
+            gradient.addColorStop(0, '#1E40AF');
+            gradient.addColorStop(1, '#3730A3');
+            
+            // Draw rounded rectangle background
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.roundRect(0, 0, 512, 512, 80);
+            ctx.fill();
+            
+            // US Flag stripes
+            ctx.fillStyle = '#DC2626';
+            ctx.fillRect(40, 60, 432, 15);
+            ctx.fillRect(40, 90, 432, 15);
+            ctx.fillRect(40, 120, 432, 15);
+            
+            // Stars
+            ctx.fillStyle = 'white';
+            drawStar(ctx, 120, 100, 5, 15, 7);
+            drawStar(ctx, 180, 110, 5, 10, 5);
+            drawStar(ctx, 220, 100, 5, 15, 7);
+            
+            // Neural Network
+            ctx.fillStyle = '#00D4FF';
+            ctx.strokeStyle = '#00D4FF';
+            ctx.lineWidth = 4;
+            
+            // Nodes
+            drawCircle(ctx, 150, 220, 12);
+            drawCircle(ctx, 200, 200, 12);
+            drawCircle(ctx, 200, 240, 12);
+            drawCircle(ctx, 250, 220, 12);
+            drawCircle(ctx, 300, 200, 12);
+            drawCircle(ctx, 300, 240, 12);
+            
+            // Connections
+            drawLine(ctx, 150, 220, 200, 200);
+            drawLine(ctx, 150, 220, 200, 240);
+            drawLine(ctx, 200, 200, 250, 220);
+            drawLine(ctx, 200, 240, 250, 220);
+            drawLine(ctx, 250, 220, 300, 200);
+            drawLine(ctx, 250, 220, 300, 240);
+            
+            // Chart background
+            ctx.fillStyle = 'rgba(255,255,255,0.1)';
+            ctx.beginPath();
+            ctx.roundRect(70, 300, 380, 80, 8);
+            ctx.fill();
+            
+            // Chart line
+            ctx.strokeStyle = '#4ADE80';
+            ctx.lineWidth = 8;
+            ctx.beginPath();
+            ctx.moveTo(80, 350);
+            ctx.quadraticCurveTo(150, 330, 200, 340);
+            ctx.quadraticCurveTo(240, 347, 280, 345);
+            ctx.quadraticCurveTo(330, 340, 380, 335);
+            ctx.quadraticCurveTo(415, 337, 450, 340);
+            ctx.stroke();
+            
+            // Dollar sign
+            ctx.strokeStyle = '#4ADE80';
+            ctx.lineWidth = 6;
+            ctx.beginPath();
+            ctx.moveTo(360, 260);
+            ctx.lineTo(360, 330);
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.moveTo(350, 280);
+            ctx.quadraticCurveTo(350, 270, 360, 270);
+            ctx.quadraticCurveTo(370, 270, 370, 280);
+            ctx.quadraticCurveTo(370, 290, 360, 290);
+            ctx.quadraticCurveTo(350, 290, 350, 300);
+            ctx.quadraticCurveTo(350, 310, 360, 310);
+            ctx.quadraticCurveTo(370, 310, 370, 320);
+            ctx.stroke();
+            
+            // Text
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 60px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('AI', 200, 450);
+            
+            ctx.fillStyle = '#4ADE80';
+            ctx.font = '40px Arial';
+            ctx.fillText('ETF', 320, 450);
+            
+            // Reset scale for next iteration
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            
+            return canvas.toDataURL();
+        }
+        
+        function drawStar(ctx, cx, cy, spikes, outerRadius, innerRadius) {
+            let rot = Math.PI / 2 * 3;
+            let x = cx;
+            let y = cy;
+            let step = Math.PI / spikes;
+            
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - outerRadius);
+            
+            for (let i = 0; i < spikes; i++) {
+                x = cx + Math.cos(rot) * outerRadius;
+                y = cy + Math.sin(rot) * outerRadius;
+                ctx.lineTo(x, y);
+                rot += step;
+                
+                x = cx + Math.cos(rot) * innerRadius;
+                y = cy + Math.sin(rot) * innerRadius;
+                ctx.lineTo(x, y);
+                rot += step;
+            }
+            
+            ctx.lineTo(cx, cy - outerRadius);
+            ctx.closePath();
+            ctx.fill();
+        }
+        
+        function drawCircle(ctx, x, y, radius) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+        
+        function drawLine(ctx, x1, y1, x2, y2) {
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+        }
+        
+        // Generate and download icons
+        sizes.forEach(({name, size}) => {
+            const dataUrl = generateIcon(size, name);
+            const link = document.createElement('a');
+            link.download = `ic_launcher_${name}.png`;
+            link.href = dataUrl;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+        
+    </script>
+</body>
+</html>

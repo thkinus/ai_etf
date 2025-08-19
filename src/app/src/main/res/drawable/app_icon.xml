@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Background -->
+    <path
+        android:pathData="M4,4 L44,4 A4,4 0 0 1 48,8 L48,40 A4,4 0 0 1 44,44 L4,44 A4,4 0 0 1 0,40 L0,8 A4,4 0 0 1 4,4 Z"
+        android:fillColor="#1E40AF" />
+        
+    <!-- US Flag elements -->
+    <path
+        android:pathData="M4,6 L44,6 L44,8 L4,8 Z"
+        android:fillColor="#DC2626" />
+    <path
+        android:pathData="M4,10 L44,10 L44,12 L4,12 Z"
+        android:fillColor="#DC2626" />
+        
+    <!-- Stars -->
+    <path
+        android:pathData="M8,8 L9,10 L11,10 L9.5,11.5 L10,13.5 L8,12 L6,13.5 L6.5,11.5 L5,10 L7,10 Z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M14,9 L15,11 L17,11 L15.5,12 L16,14 L14,13 L12,14 L12.5,12 L11,11 L13,11 Z"
+        android:fillColor="#FFFFFF" />
+        
+    <!-- AI Neural Network -->
+    <path
+        android:pathData="M12,20m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#00D4FF" />
+    <path
+        android:pathData="M20,18m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#00D4FF" />
+    <path
+        android:pathData="M20,22m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#00D4FF" />
+    <path
+        android:pathData="M28,20m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillColor="#00D4FF" />
+        
+    <!-- Neural connections -->
+    <path
+        android:pathData="M12,20 L20,18"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M12,20 L20,22"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M20,18 L28,20"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M20,22 L28,20"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1" />
+        
+    <!-- Chart line -->
+    <path
+        android:pathData="M6,32 Q12,30 18,31 T30,32 T42,30"
+        android:strokeColor="#4ADE80"
+        android:strokeWidth="2" />
+        
+    <!-- Dollar symbol -->
+    <path
+        android:pathData="M36,24 Q36,22 38,22 Q40,22 40,24 Q40,26 38,26 Q36,26 36,28 Q36,30 38,30 Q40,30 40,32 M38,20 L38,34"
+        android:strokeColor="#4ADE80"
+        android:strokeWidth="1.5" />
+        
+    <!-- AI Text -->
+    <path
+        android:pathData="M16,40 L17,37 L18,40 M16.7,39 L17.3,39"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.5" />
+    <path
+        android:pathData="M20,40 L20,37 L21,37 L22,40 L22,37"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.5" />
+        
+</vector>
