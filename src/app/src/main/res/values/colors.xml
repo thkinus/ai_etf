@@ -1,22 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- iOS 스타일 색상 -->
-    <color name="ios_blue">#007AFF</color>
-    <color name="ios_green">#34C759</color>
-    <color name="ios_red">#FF3B30</color>
-    <color name="ios_orange">#FF9500</color>
-    <color name="ios_gray">#8E8E93</color>
-    <color name="ios_light_gray">#F2F2F7</color>
-    <color name="ios_dark_gray">#3A3A3C</color>
+    <!-- Primary Brand Colors -->
+    <color name="primary_blue">#007AFF</color>
+    <color name="primary_blue_dark">#0056CC</color>
+    <color name="primary_blue_light">#4DA3FF</color>
     
-    <!-- 배경색 -->
-    <color name="ios_background">#F2F2F7</color>
-    <color name="ios_card_background">#FFFFFF</color>
+    <!-- Status Colors -->
+    <color name="success_green">#34C759</color>
+    <color name="success_green_light">#7FD99A</color>
+    <color name="danger_red">#FF3B30</color>
+    <color name="danger_red_light">#FF7A73</color>
+    <color name="warning_orange">#FF9500</color>
+    <color name="warning_orange_light">#FFBF5C</color>
     
-    <!-- 텍스트 색상 -->
-    <color name="ios_text_primary">#000000</color>
-    <color name="ios_text_secondary">#8E8E93</color>
+    <!-- Neutral Colors -->
+    <color name="neutral_50">#FAFAFA</color>
+    <color name="neutral_100">#F4F4F5</color>
+    <color name="neutral_200">#E4E4E7</color>
+    <color name="neutral_300">#D4D4D8</color>
+    <color name="neutral_400">#A1A1AA</color>
+    <color name="neutral_500">#71717A</color>
+    <color name="neutral_600">#52525B</color>
+    <color name="neutral_700">#3F3F46</color>
+    <color name="neutral_800">#27272A</color>
+    <color name="neutral_900">#18181B</color>
     
-    <!-- 분리선 -->
-    <color name="ios_separator">#E5E5EA</color>
+    <!-- Background Colors -->
+    <color name="background_primary">#FFFFFF</color>
+    <color name="background_secondary">#F8FAFC</color>
+    <color name="background_tertiary">#F1F5F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F8FAFC</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_tertiary">#94A3B8</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    
+    <!-- Border & Divider -->
+    <color name="border">#E2E8F0</color>
+    <color name="divider">#F1F5F9</color>
+    
+    <!-- Legacy iOS colors (kept for compatibility) -->
+    <color name="ios_blue">@color/primary_blue</color>
+    <color name="ios_green">@color/success_green</color>
+    <color name="ios_red">@color/danger_red</color>
+    <color name="ios_orange">@color/warning_orange</color>
+    <color name="ios_gray">@color/neutral_500</color>
+    <color name="ios_light_gray">@color/neutral_100</color>
+    <color name="ios_dark_gray">@color/neutral_700</color>
+    <color name="ios_background">@color/background_secondary</color>
+    <color name="ios_card_background">@color/surface</color>
+    <color name="ios_text_primary">@color/text_primary</color>
+    <color name="ios_text_secondary">@color/text_secondary</color>
+    <color name="ios_separator">@color/border</color>
+    
+    <!-- Financial Data Colors -->
+    <color name="profit_green">#10B981</color>
+    <color name="profit_green_bg">#ECFDF5</color>
+    <color name="loss_red">#EF4444</color>
+    <color name="loss_red_bg">#FEF2F2</color>
+    <color name="neutral_yellow">#F59E0B</color>
+    <color name="neutral_yellow_bg">#FFFBEB</color>
 </resources>

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -52,6 +54,30 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         loadEtfData();
         setupClickListeners();
+        
+        // Add entrance animations
+        animateViewsOnCreate();
+    }
+    
+    private void animateViewsOnCreate() {
+        // Animate header with slide in from top
+        View headerLayout = findViewById(R.id.headerLayout);
+        if (headerLayout != null) {
+            Animation slideInDown = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);
+            headerLayout.startAnimation(slideInDown);
+        }
+        
+        // Animate recycler view with fade in
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        recyclerView.startAnimation(fadeIn);
+        
+        // Animate tabs with scale in
+        Animation scaleIn = AnimationUtils.loadAnimation(this, R.anim.scale_in);
+        if (usTab != null) usTab.startAnimation(scaleIn);
+        if (krTab != null) {
+            scaleIn.setStartOffset(100); // Stagger animation
+            krTab.startAnimation(scaleIn);
+        }
     }
     
     private void initViews() {
@@ -246,6 +272,10 @@ public class MainActivity extends AppCompatActivity {
     }
     
     private void loadUsEtfData() {
+        // Add fade out animation before loading new data
+        Animation fadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out);
+        recyclerView.startAnimation(fadeOut);
+        
         // SharedPreferences에서 설정된 ETF 목록 불러오기
         String json = sharedPreferences.getString("etf_list", null);
         if (json != null) {
@@ -268,13 +298,25 @@ public class MainActivity extends AppCompatActivity {
         
         adapter = new EtfAdapter(enabledEtfs);
         recyclerView.setAdapter(adapter);
+        
+        // Add fade in animation after loading new data
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        recyclerView.startAnimation(fadeIn);
     }
     
     private void loadKrEtfData() {
+        // Add fade out animation before loading new data
+        Animation fadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out);
+        recyclerView.startAnimation(fadeOut);
+        
         // Load Korean ETF data
         List<EtfData> koreanEtfs = KoreanEtfDataProvider.getKoreanAiEtfData();
         adapter = new EtfAdapter(koreanEtfs);
         recyclerView.setAdapter(adapter);
+        
+        // Add fade in animation after loading new data
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        recyclerView.startAnimation(fadeIn);
     }
     
     private void setupClickListeners() {
@@ -303,29 +345,41 @@ public class MainActivity extends AppCompatActivity {
     private void selectUsTab() {
         isUsTabSelected = true;
         
+        // Apply animations
+        Animation scaleIn = AnimationUtils.loadAnimation(this, R.anim.scale_in);
+        usTab.startAnimation(scaleIn);
+        
         // US 탭 활성화 스타일
-        usTabText.setTextColor(0xFF007AFF);
+        usTab.setSelected(true);
+        usTabText.setTextColor(getResources().getColor(R.color.text_on_primary, null));
         usTabText.setTypeface(null, android.graphics.Typeface.BOLD);
-        usTabIcon.setColorFilter(0xFF007AFF);
+        usTabIcon.setColorFilter(getResources().getColor(R.color.primary_blue, null));
         
         // KR 탭 비활성화 스타일
-        krTabText.setTextColor(0xFF8E8E93);
+        krTab.setSelected(false);
+        krTabText.setTextColor(getResources().getColor(R.color.text_secondary, null));
         krTabText.setTypeface(null, android.graphics.Typeface.NORMAL);
-        krTabIcon.setColorFilter(0xFF8E8E93);
+        krTabIcon.setColorFilter(getResources().getColor(R.color.text_secondary, null));
     }
     
     private void selectKrTab() {
         isUsTabSelected = false;
         
+        // Apply animations
+        Animation scaleIn = AnimationUtils.loadAnimation(this, R.anim.scale_in);
+        krTab.startAnimation(scaleIn);
+        
         // KR 탭 활성화 스타일
-        krTabText.setTextColor(0xFF007AFF);
+        krTab.setSelected(true);
+        krTabText.setTextColor(getResources().getColor(R.color.text_on_primary, null));
         krTabText.setTypeface(null, android.graphics.Typeface.BOLD);
-        krTabIcon.setColorFilter(0xFF007AFF);
+        krTabIcon.setColorFilter(getResources().getColor(R.color.primary_blue, null));
         
         // US 탭 비활성화 스타일
-        usTabText.setTextColor(0xFF8E8E93);
+        usTab.setSelected(false);
+        usTabText.setTextColor(getResources().getColor(R.color.text_secondary, null));
         usTabText.setTypeface(null, android.graphics.Typeface.NORMAL);
-        usTabIcon.setColorFilter(0xFF8E8E93);
+        usTabIcon.setColorFilter(getResources().getColor(R.color.text_secondary, null));
     }
     
     @Override

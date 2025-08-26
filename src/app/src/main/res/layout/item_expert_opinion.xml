@@ -3,31 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/ios_expert_opinion_background"
-    android:padding="16dp"
-    android:layout_marginBottom="12dp"
+    android:background="@drawable/card_modern"
+    android:padding="20dp"
+    android:layout_marginBottom="16dp"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    android:elevation="2dp">
 
+    <!-- Expert Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
+        <!-- Expert Avatar/Icon -->
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/primary_blue_light"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_expert_initial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JC"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_on_primary"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <!-- Expert Info -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
 
             <TextView
                 android:id="@+id/tv_expert_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="James Chen"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/ios_text_primary"
+                android:textColor="@color/text_primary"
                 android:fontFamily="sans-serif-medium" />
 
             <TextView
@@ -36,11 +60,12 @@
                 android:layout_height="wrap_content"
                 android:text="Goldman Sachs"
                 android:textSize="14sp"
-                android:textColor="@color/ios_text_secondary"
+                android:textColor="@color/text_secondary"
                 android:layout_marginTop="2dp" />
 
         </LinearLayout>
 
+        <!-- Rating Badge -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,33 +76,41 @@
                 android:id="@+id/tv_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Buy"
-                android:textSize="15sp"
+                android:text="BUY"
+                android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/ios_green"
-                android:fontFamily="sans-serif-medium" />
+                android:textColor="@color/text_on_primary"
+                android:fontFamily="sans-serif-medium"
+                android:background="@color/success_green"
+                android:padding="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
 
             <TextView
                 android:id="@+id/tv_target_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Target: $400"
-                android:textSize="14sp"
-                android:textColor="@color/ios_text_secondary"
-                android:layout_marginTop="2dp" />
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="6dp"
+                android:fontFamily="sans-serif-medium" />
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <!-- Opinion Content -->
     <TextView
         android:id="@+id/tv_opinion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="QQQ continues to benefit from tech sector strength."
-        android:textSize="15sp"
-        android:textColor="@color/ios_text_primary"
-        android:layout_marginTop="12dp"
-        android:lineSpacingMultiplier="1.3" />
+        android:text="QQQ continues to benefit from tech sector strength. Strong fundamentals and growing AI adoption support our bullish outlook."
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="20dp"
+        android:lineSpacingMultiplier="1.4"
+        android:background="@color/neutral_50"
+        android:padding="16dp" />
 
 </LinearLayout>
