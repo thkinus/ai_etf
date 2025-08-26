@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- AI Text - Large and Bold -->
+    <!-- A Letter -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,75 L27,25 L33,25 L40,75 L35,75 L33.5,65 L26.5,65 L25,75 Z M28,55 L32,55 L30,45 Z" />
+    
+    <!-- I Letter -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,25 L45,75 L50,75 L50,25 Z" />
+    
+    <!-- Separator dot -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M54,48m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    
+    <!-- E Letter -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,25 L60,75 L85,75 L85,70 L65,70 L65,52 L82,52 L82,47 L65,47 L65,30 L85,30 L85,25 Z" />
+    
+    <!-- T Letter -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,85 L20,90 L50,90 L50,85 L38,85 L38,105 L32,105 L32,85 Z" />
+    
+    <!-- F Letter -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,85 L55,105 L60,105 L60,97 L75,97 L75,92 L60,92 L60,90 L78,90 L78,85 Z" />
+    
+    <!-- Neural network connections around text -->
+    <path
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="2"
+        android:pathData="M15,40 Q25,35 35,40" />
+    <path
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="2"
+        android:pathData="M73,35 Q83,40 93,35" />
+    
+    <!-- Small neural nodes -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M15,40m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M93,35m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <!-- Chart elements -->
+    <path
+        android:strokeColor="#4ADE80"
+        android:strokeWidth="3"
+        android:pathData="M10,78 Q20,73 30,76 Q40,79 50,77" />
+    <path
+        android:strokeColor="#4ADE80"
+        android:strokeWidth="3"
+        android:pathData="M58,77 Q68,74 78,77 Q88,80 98,78" />
+    
+    <!-- Dollar symbols as accent -->
+    <path
+        android:fillColor="#4ADE80"
+        android:pathData="M90,50 Q90,47 92,47 Q94,47 94,50 Q94,52 92,52 Q90,52 90,54 Q90,56 92,56 Q94,56 94,58 M92,45 L92,60" />
+    <path
+        android:fillColor="#4ADE80"
+        android:pathData="M12,60 Q12,57 14,57 Q16,57 16,60 Q16,62 14,62 Q12,62 12,64 Q12,66 14,66 Q16,66 16,68 M14,55 L14,70" />
+    
+    <!-- Tech circuit accent -->
+    <path
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1.5"
+        android:pathData="M85,15 L90,15 L90,20 M87,17 L87,13 L93,13" />
+    <path
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1.5"
+        android:pathData="M15,93 L20,93 L20,98 M17,95 L17,91 L23,91" />
+    
+</vector>

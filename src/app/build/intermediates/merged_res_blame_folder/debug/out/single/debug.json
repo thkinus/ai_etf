@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "com.example.aietfapp-pngs-28:/drawable-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_button_secondary.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/button_secondary.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "com.example.aietfapp-pngs-28:/drawable-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_button_primary.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/button_primary.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_tab_indicator.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/tab_indicator.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/layout_item_symbol_suggestion.xml.flat",
+        "source": "com.example.aietfapp-main-34:/layout/item_symbol_suggestion.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.aietfapp-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.aietfapp-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/anim_fade_in.xml.flat",
+        "source": "com.example.aietfapp-main-34:/anim/fade_in.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/layout_activity_settings.xml.flat",
+        "source": "com.example.aietfapp-main-34:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "com.example.aietfapp-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/anim_fade_out.xml.flat",
+        "source": "com.example.aietfapp-main-34:/anim/fade_out.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/anim_slide_in_right.xml.flat",
+        "source": "com.example.aietfapp-main-34:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_ripple_effect.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/ripple_effect.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_ios_expert_opinion_background.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/ios_expert_opinion_background.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/layout_item_etf_settings.xml.flat",
+        "source": "com.example.aietfapp-main-34:/layout/item_etf_settings.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/layout_dialog_add_etf.xml.flat",
+        "source": "com.example.aietfapp-main-34:/layout/dialog_add_etf.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable-anydpi-v24_ic_launcher_background.xml.flat",
+        "source": "com.example.aietfapp-pngs-28:/drawable-anydpi-v24/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.aietfapp-pngs-28:/drawable-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "com.example.aietfapp-pngs-28:/drawable-ldpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/anim_scale_in.xml.flat",
+        "source": "com.example.aietfapp-main-34:/anim/scale_in.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_gradient_header.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/gradient_header.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/anim_pulse.xml.flat",
+        "source": "com.example.aietfapp-main-34:/anim/pulse.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/anim_slide_in_left.xml.flat",
+        "source": "com.example.aietfapp-main-34:/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/layout_item_expert_opinion.xml.flat",
+        "source": "com.example.aietfapp-main-34:/layout/item_expert_opinion.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_ios_button_unselected.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/ios_button_unselected.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_card_modern.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/card_modern.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/layout_item_etf_chart.xml.flat",
+        "source": "com.example.aietfapp-main-34:/layout/item_etf_chart.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.aietfapp-pngs-28:/drawable-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.aietfapp-pngs-28:/drawable-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_ios_button_selected.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/ios_button_selected.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_ios_card_background.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/ios_card_background.xml"
+    },
+    {
+        "merged": "com.example.aietfapp-merged_res-32:/drawable_app_icon.xml.flat",
+        "source": "com.example.aietfapp-main-34:/drawable/app_icon.xml"
+    }
+]
